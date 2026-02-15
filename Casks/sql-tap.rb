@@ -3,7 +3,7 @@ cask "sql-tap" do
   name "sql-tap"
   desc "Watch SQL traffic in real-time with a TUI"
   homepage "https://github.com/mickamy/sql-tap"
-  version "0.0.6"
+  version "0.0.7"
 
   livecheck do
     skip "Auto-generated on release."
@@ -15,22 +15,22 @@ cask "sql-tap" do
   on_macos do
     on_intel do
       url "https://github.com/mickamy/sql-tap/releases/download/v#{version}/sql-tap_#{version}_darwin_amd64.tar.gz"
-      sha256 "5bf70d121a8e416d73ed35e8c2f38b12730858afc57007f450bcd61659a06f6d"
+      sha256 "dfa7990a4c5476b2dc0d1dcfe4340eb872fb4af186efbdaf1679baa4bf38b70c"
     end
     on_arm do
       url "https://github.com/mickamy/sql-tap/releases/download/v#{version}/sql-tap_#{version}_darwin_arm64.tar.gz"
-      sha256 "d35183b2cfb0064b7a1c319be3d986100df463baa387d393065a8ccce5f30962"
+      sha256 "4d1d4c4c238a91532e4c7100c6c0eae305ad199b56c683feb2a1cc034db76f00"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/mickamy/sql-tap/releases/download/v#{version}/sql-tap_#{version}_linux_amd64.tar.gz"
-      sha256 "d1529731e24ae8a370f6d66e3b9687872098427b6dce60d480715de12d3a80ca"
+      sha256 "f0a2542937c6b87282f7649ae40f4fb6119e4060af78a6b5c2ca1990a59551c6"
     end
     on_arm do
       url "https://github.com/mickamy/sql-tap/releases/download/v#{version}/sql-tap_#{version}_linux_arm64.tar.gz"
-      sha256 "54992d654d3cc46c328f0023ba841ade3720957c7d31de838867676e972e1ec6"
+      sha256 "43233ab1d45d1028ecaed11920a2aa6c133215c662b3b4583c509db2cef93783"
     end
   end
 
