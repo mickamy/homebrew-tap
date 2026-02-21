@@ -3,7 +3,7 @@ cask "grpc-tap" do
   name "grpc-tap"
   desc "Watch gRPC traffic in real-time with a TUI"
   homepage "https://github.com/mickamy/grpc-tap"
-  version "0.0.1"
+  version "0.0.2"
 
   livecheck do
     skip "Auto-generated on release."
@@ -15,22 +15,22 @@ cask "grpc-tap" do
   on_macos do
     on_intel do
       url "https://github.com/mickamy/grpc-tap/releases/download/v#{version}/grpc-tap_#{version}_darwin_amd64.tar.gz"
-      sha256 "97108f0578257622b700af116c623e68632459d6f3794808d647d9e6de3fe549"
+      sha256 "341558a09e4cba3f692e5f78cfa69b1d0759384b1d1b69841cb42ec9bc111891"
     end
     on_arm do
       url "https://github.com/mickamy/grpc-tap/releases/download/v#{version}/grpc-tap_#{version}_darwin_arm64.tar.gz"
-      sha256 "aa504f73a05526d6f5fadf3b5d6a169e85fc41ab460c5d88e8a9561ba88add7f"
+      sha256 "fe85db2a982ff2b5764551e39dcaaf73716f48b6328af4468ecbc803020c879c"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/mickamy/grpc-tap/releases/download/v#{version}/grpc-tap_#{version}_linux_amd64.tar.gz"
-      sha256 "22ac826bbea732c748f0599783a24feedb3f01076ec0fea59c48fa1da5f0f720"
+      sha256 "8bf3855895a1e33e39ccb50df70dd4a888afd340343342bc3e4a5c3c10519f4c"
     end
     on_arm do
       url "https://github.com/mickamy/grpc-tap/releases/download/v#{version}/grpc-tap_#{version}_linux_arm64.tar.gz"
-      sha256 "7bc7e06e25512c169f1799d88b180891cc79731baad78bca0bd5a69dc182cf8a"
+      sha256 "c7be2a2da2f599cb84754eb425f34f5ba2d627fc4a8f37137a7a7b186a17109c"
     end
   end
 
