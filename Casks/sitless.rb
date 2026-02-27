@@ -1,6 +1,6 @@
 cask "sitless" do
-  version "0.0.1"
-  sha256 "961de02677a3937a2e8f61eb5c7a7abb5f2b4caae9219e78f965839a7827c77d"
+  version "0.0.2"
+  sha256 "8d9e9e0b1433d58335ea632dd22013f00f6c79c765d848228469f45e22dfa070"
 
   url "https://github.com/mickamy/SitLess/releases/download/v#{version}/SitLess.app.zip"
   name "SitLess"
@@ -8,6 +8,11 @@ cask "sitless" do
   homepage "https://github.com/mickamy/SitLess"
 
   app "SitLess.app"
+
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-cr", "#{appdir}/SitLess.app"]
+  end
 
   zap trash: [
     "~/Library/Preferences/com.mickamy.SitLess.plist",
