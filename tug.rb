@@ -5,20 +5,20 @@
 class Tug < Formula
   desc "Replace port conflicts with stable, named URLs for Docker Compose. For humans and agents."
   homepage "https://github.com/mickamy/tug"
-  version "0.0.2"
+  version "0.0.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/mickamy/tug/releases/download/v0.0.2/tug_0.0.2_darwin_amd64.tar.gz"
-      sha256 "3c00e0249f7e3ff3f3ddd1ac1d71ab16994ac9a6792d3bd99f3e4478c370eae5"
+      url "https://github.com/mickamy/tug/releases/download/v0.0.3/tug_0.0.3_darwin_amd64.tar.gz"
+      sha256 "9c387fbb4b0342237c5e391fa6b668058d7e9f3c72516dc83089980941cc2692"
 
       define_method(:install) do
         bin.install "tug"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/mickamy/tug/releases/download/v0.0.2/tug_0.0.2_darwin_arm64.tar.gz"
-      sha256 "d9164cefc5fa03136c4985b59612e019c3c1862ba70526b4d4d260f259ecd080"
+      url "https://github.com/mickamy/tug/releases/download/v0.0.3/tug_0.0.3_darwin_arm64.tar.gz"
+      sha256 "ad8942559c6f83cd3081dcf46c42529f99cbb5296d090754832a230c9367a257"
 
       define_method(:install) do
         bin.install "tug"
@@ -28,15 +28,15 @@ class Tug < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mickamy/tug/releases/download/v0.0.2/tug_0.0.2_linux_amd64.tar.gz"
-      sha256 "35c95a19d2a36e08d5c34b6d29f705b7aec1d18568caeb659215d9f8e36c4d75"
+      url "https://github.com/mickamy/tug/releases/download/v0.0.3/tug_0.0.3_linux_amd64.tar.gz"
+      sha256 "fc8d8eb525f6029e7cea7ef8d6ea1a21745c89b719d17bdbec9b85ff671bf401"
       define_method(:install) do
         bin.install "tug"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mickamy/tug/releases/download/v0.0.2/tug_0.0.2_linux_arm64.tar.gz"
-      sha256 "0c8b2bd5520f87a4375dd09983349a0d4b07abbc596228c78d77edcd9c0fcd9d"
+      url "https://github.com/mickamy/tug/releases/download/v0.0.3/tug_0.0.3_linux_arm64.tar.gz"
+      sha256 "6b5bae6c39086541020aaa707770413b35369afe63a45a6eac05d314f7506057"
       define_method(:install) do
         bin.install "tug"
       end
