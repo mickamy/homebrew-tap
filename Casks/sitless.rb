@@ -1,6 +1,6 @@
 cask "sitless" do
-  version "0.0.3"
-  sha256 "6970e165addce689400c5ad615af03cae4ca1984a6dd0429580ed9828c27e0c6"
+  version "0.0.4"
+  sha256 "e336cc6708831ba28b7e4821fd16044fea253214b120df62d5ecc049bb7c4622"
 
   url "https://github.com/mickamy/SitLess/releases/download/v#{version}/SitLess.app.zip"
   name "SitLess"
