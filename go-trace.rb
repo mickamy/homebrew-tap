@@ -5,20 +5,20 @@
 class GoTrace < Formula
   desc "Instantly visualize request flows in your Go application — no infrastructure, no code changes."
   homepage "https://github.com/mickamy/go-trace"
-  version "0.0.1"
+  version "0.0.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/mickamy/go-trace/releases/download/v0.0.1/go-trace_0.0.1_darwin_amd64.tar.gz"
-      sha256 "5fb9eae30f7ce45f418b5da214c2f15767e46999828a5af702a21bb119354346"
+      url "https://github.com/mickamy/go-trace/releases/download/v0.0.2/go-trace_0.0.2_darwin_amd64.tar.gz"
+      sha256 "910042e89c5f95f5159ae1b528c7cd0b9ec67b38c88348d45c466f2ad7708ce5"
 
       define_method(:install) do
         bin.install "go-trace"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/mickamy/go-trace/releases/download/v0.0.1/go-trace_0.0.1_darwin_arm64.tar.gz"
-      sha256 "cf7c1e85efd97910a9aebe1fa04ed8af8351617ff4a24d339fa85aa1ec4c57ef"
+      url "https://github.com/mickamy/go-trace/releases/download/v0.0.2/go-trace_0.0.2_darwin_arm64.tar.gz"
+      sha256 "476b4f7f48523378a6ad398bfa567f715944a2d9ec5f2d149cec85c05710ec60"
 
       define_method(:install) do
         bin.install "go-trace"
@@ -28,15 +28,15 @@ class GoTrace < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mickamy/go-trace/releases/download/v0.0.1/go-trace_0.0.1_linux_amd64.tar.gz"
-      sha256 "1685815dc4c706c55f028eb7f00406c05e48b17a4e2d255d94f5b18687e8bf08"
+      url "https://github.com/mickamy/go-trace/releases/download/v0.0.2/go-trace_0.0.2_linux_amd64.tar.gz"
+      sha256 "dbae01165870d26e58c6e3c0535c7ff9cde629d76997993885292929c78d4589"
       define_method(:install) do
         bin.install "go-trace"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mickamy/go-trace/releases/download/v0.0.1/go-trace_0.0.1_linux_arm64.tar.gz"
-      sha256 "f084c8840ca991a9fb6d43833f0de011d0b5957f379a91445512781f6ad32944"
+      url "https://github.com/mickamy/go-trace/releases/download/v0.0.2/go-trace_0.0.2_linux_arm64.tar.gz"
+      sha256 "137c25439b4a984d0f969c22e0c0980aa50a776c6a5974664901282f9c90003c"
       define_method(:install) do
         bin.install "go-trace"
       end
