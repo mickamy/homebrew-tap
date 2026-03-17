@@ -5,12 +5,12 @@
 class GrpcTap < Formula
   desc "Watch gRPC traffic in real-time with a TUI"
   homepage "https://github.com/mickamy/grpc-tap"
-  version "0.0.4"
+  version "0.0.5"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/mickamy/grpc-tap/releases/download/v0.0.4/grpc-tap_0.0.4_darwin_amd64.tar.gz"
-      sha256 "a136500982c471e7ae7420fe5617deb8fc754737e2b7f44fb3f26626b9a7d68b"
+      url "https://github.com/mickamy/grpc-tap/releases/download/v0.0.5/grpc-tap_0.0.5_darwin_amd64.tar.gz"
+      sha256 "cd01c2e5165208d083522f53de6e82a3c6a1f9f5c6bb1ee584d5dfe1cacd69ff"
 
       define_method(:install) do
         bin.install "grpc-tap"
@@ -18,8 +18,8 @@ class GrpcTap < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/mickamy/grpc-tap/releases/download/v0.0.4/grpc-tap_0.0.4_darwin_arm64.tar.gz"
-      sha256 "3376d99ce801a50e01d9f76d5e47a622c9820c08a64e950a6fd2e8022efc40d2"
+      url "https://github.com/mickamy/grpc-tap/releases/download/v0.0.5/grpc-tap_0.0.5_darwin_arm64.tar.gz"
+      sha256 "b71f933b0dcd69bb40df782008ff8a926703c4ccce875639b726bdbdd6777971"
 
       define_method(:install) do
         bin.install "grpc-tap"
@@ -30,16 +30,16 @@ class GrpcTap < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mickamy/grpc-tap/releases/download/v0.0.4/grpc-tap_0.0.4_linux_amd64.tar.gz"
-      sha256 "97292bfb88309beef319a2461d144dedd2182c4622861d9d4a51752c1cfb41fc"
+      url "https://github.com/mickamy/grpc-tap/releases/download/v0.0.5/grpc-tap_0.0.5_linux_amd64.tar.gz"
+      sha256 "aef36e29fb451c82f518ed1fb9d70dcafab3a0ea2c8c8bf0a4facd58af9bfe10"
       define_method(:install) do
         bin.install "grpc-tap"
         bin.install "grpc-tapd"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mickamy/grpc-tap/releases/download/v0.0.4/grpc-tap_0.0.4_linux_arm64.tar.gz"
-      sha256 "bbe5cc8f93604ab4289ae20b4602d0de225017361933749424d76b5acf4433c1"
+      url "https://github.com/mickamy/grpc-tap/releases/download/v0.0.5/grpc-tap_0.0.5_linux_arm64.tar.gz"
+      sha256 "6de8742752bc190249cb7c65c538eb75b0947bc8943c22fba71e54a8b753999e"
       define_method(:install) do
         bin.install "grpc-tap"
         bin.install "grpc-tapd"
