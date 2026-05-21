@@ -10,7 +10,7 @@ class Seeder < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/mickamy/seeder/releases/download/v0.0.1/seeder_0.0.1_darwin_amd64.tar.gz"
-      sha256 "952ba4ff901d7b3f00f5eadb93cbd9ed74d15e3384834fa511fb0b86daadeb2a"
+      sha256 "2281c6cb85261f711bdebd18ef7a93bcd29a0e716fc655f7ad6658d43ec06248"
 
       define_method(:install) do
         bin.install "seeder"
@@ -18,7 +18,7 @@ class Seeder < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/mickamy/seeder/releases/download/v0.0.1/seeder_0.0.1_darwin_arm64.tar.gz"
-      sha256 "dcae0fc1402cb5d0d2a82a549cf76b98dd56563593769ba9f61b7584fe023a4a"
+      sha256 "697b11f5e8ef3d793a2a98dcb539c1458201ec4aa0d6bf631b5ddc04bc72bbd8"
 
       define_method(:install) do
         bin.install "seeder"
@@ -29,14 +29,14 @@ class Seeder < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/mickamy/seeder/releases/download/v0.0.1/seeder_0.0.1_linux_amd64.tar.gz"
-      sha256 "df56d6d79380aacfbe5e5c6fcdb044d04221fc88284cd1ab5bd72b24ba83acce"
+      sha256 "f6fca59626fad92d55be1c6dd3664b027f7e65960ea0a2277655b7336fe10744"
       define_method(:install) do
         bin.install "seeder"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/mickamy/seeder/releases/download/v0.0.1/seeder_0.0.1_linux_arm64.tar.gz"
-      sha256 "0bd0e1843558a727d5ff7e7af64494da4e299d2cf2fea5720271f32e0fdb8c37"
+      sha256 "a63f15364644068833a3a5a060d03fd79f11302d854db588f01dcf67ad7fdf4b"
       define_method(:install) do
         bin.install "seeder"
       end
