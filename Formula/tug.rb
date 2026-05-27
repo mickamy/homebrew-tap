@@ -5,20 +5,20 @@
 class Tug < Formula
   desc "Replace port conflicts with stable, named URLs for Docker Compose."
   homepage "https://github.com/mickamy/tug"
-  version "0.0.6"
+  version "0.0.7"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/mickamy/tug/releases/download/v0.0.6/tug_0.0.6_darwin_amd64.tar.gz"
-      sha256 "effe5113fa1942edaa39ed405c4322ae41f6837c65be810ba73a79b3045ae95f"
+      url "https://github.com/mickamy/tug/releases/download/v0.0.7/tug_0.0.7_darwin_amd64.tar.gz"
+      sha256 "2cd7c2c56fc168583f251aa9ed69a0a32eddddf92bcf353163f67b545fc75f59"
 
       define_method(:install) do
         bin.install "tug"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/mickamy/tug/releases/download/v0.0.6/tug_0.0.6_darwin_arm64.tar.gz"
-      sha256 "ba63b7dd22ec78e5d2a1594f343f0e74109915a4e90331d5627be1066c56d655"
+      url "https://github.com/mickamy/tug/releases/download/v0.0.7/tug_0.0.7_darwin_arm64.tar.gz"
+      sha256 "24045e61d8824836d65ce7273bb3d9ba65c8cada94a50f4ed79c0438da58651a"
 
       define_method(:install) do
         bin.install "tug"
@@ -28,15 +28,15 @@ class Tug < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mickamy/tug/releases/download/v0.0.6/tug_0.0.6_linux_amd64.tar.gz"
-      sha256 "816d61541aad2d484ad6a90d0569c171a56736137acec1cc8b9f05ff71c9ec21"
+      url "https://github.com/mickamy/tug/releases/download/v0.0.7/tug_0.0.7_linux_amd64.tar.gz"
+      sha256 "32ff688525aaf04b7b6d5a36b97bd43f96faa9ba7d084c2f6dfbac4e867eceb1"
       define_method(:install) do
         bin.install "tug"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mickamy/tug/releases/download/v0.0.6/tug_0.0.6_linux_arm64.tar.gz"
-      sha256 "db0cc2b2f29ad7f4eccb568b213fcd30a61031f212d147504f042672e5dae1e7"
+      url "https://github.com/mickamy/tug/releases/download/v0.0.7/tug_0.0.7_linux_arm64.tar.gz"
+      sha256 "6d516bfaaa7703f5abb78af20120a84df6767f8fb0f3a563f252142e98701e4b"
       define_method(:install) do
         bin.install "tug"
       end
