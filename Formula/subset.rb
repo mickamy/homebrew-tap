@@ -10,7 +10,7 @@ class Subset < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/mickamy/subset/releases/download/v0.1.0/subset_0.1.0_darwin_amd64.tar.gz"
-      sha256 "475ef484a096c5a810e24532c9d5a2fb3f7e4e15f2461956336bcd3a500258d7"
+      sha256 "2e62b47d9f95c417ac59e190e685ab5aec6e3cf9ac62d7b59c6861bc29cdb62f"
 
       define_method(:install) do
         bin.install "subset"
@@ -18,7 +18,7 @@ class Subset < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/mickamy/subset/releases/download/v0.1.0/subset_0.1.0_darwin_arm64.tar.gz"
-      sha256 "77b9cbbb77f713dc0aa5452d85170b05b6c816de0334aa652dc6702097b8e0fc"
+      sha256 "519cf8bbf47f4356a3e13bab5b58b726588f8add2733df7e9873a6cbab30e39e"
 
       define_method(:install) do
         bin.install "subset"
@@ -29,14 +29,14 @@ class Subset < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/mickamy/subset/releases/download/v0.1.0/subset_0.1.0_linux_amd64.tar.gz"
-      sha256 "77abc452513351fb0427f20758f5143d5994cc724d446aebac1e82e6e34d19fd"
+      sha256 "03dead8f99e7d94e17e88578d5fcaa90e6f432a992b12f0cb1f8e5e1698ca65e"
       define_method(:install) do
         bin.install "subset"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/mickamy/subset/releases/download/v0.1.0/subset_0.1.0_linux_arm64.tar.gz"
-      sha256 "e587b3db4ba0d5a01b26b3da207c3f3a0626ed917cec6719f3bd5716fbf9ce9b"
+      sha256 "9ec878feac3f08ceae8c21a0b21846e6cd3a7f26949d1e8fd4e89a00f5197d2f"
       define_method(:install) do
         bin.install "subset"
       end
