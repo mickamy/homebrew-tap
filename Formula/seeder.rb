@@ -5,20 +5,20 @@
 class Seeder < Formula
   desc "Populate your database with realistic fake data, one command."
   homepage "https://github.com/mickamy/seeder"
-  version "0.0.3"
+  version "0.0.4"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/mickamy/seeder/releases/download/v0.0.3/seeder_0.0.3_darwin_amd64.tar.gz"
-      sha256 "751dddd43dfa2424438affaab8d2def678b4044f54f8aae4ce88631decbd6a13"
+      url "https://github.com/mickamy/seeder/releases/download/v0.0.4/seeder_0.0.4_darwin_amd64.tar.gz"
+      sha256 "cd05d4ea4129f78229feb258e50df1baf80c86c6701020920aa1dd87d04df756"
 
       define_method(:install) do
         bin.install "seeder"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/mickamy/seeder/releases/download/v0.0.3/seeder_0.0.3_darwin_arm64.tar.gz"
-      sha256 "892c8df5a19364c2f827f50d6b516a97d7b8521dbd724fdba7e6f93a75db4712"
+      url "https://github.com/mickamy/seeder/releases/download/v0.0.4/seeder_0.0.4_darwin_arm64.tar.gz"
+      sha256 "5574572ac8c0b321d824eacc2d5f9ec8eae22786dbc6694413de56337bed59ea"
 
       define_method(:install) do
         bin.install "seeder"
@@ -28,15 +28,15 @@ class Seeder < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mickamy/seeder/releases/download/v0.0.3/seeder_0.0.3_linux_amd64.tar.gz"
-      sha256 "9c2757fd6d90a8a433c84c3ea95ab2f3684a9ad3430222816763fa6af655c9d1"
+      url "https://github.com/mickamy/seeder/releases/download/v0.0.4/seeder_0.0.4_linux_amd64.tar.gz"
+      sha256 "9c3cba56fcbe279dd5ccf0637c9ff0b8b970bcae34f91e0ebd41993e0b11cc13"
       define_method(:install) do
         bin.install "seeder"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mickamy/seeder/releases/download/v0.0.3/seeder_0.0.3_linux_arm64.tar.gz"
-      sha256 "cdcffb697d86fd126f55b044904acaa594ee9b981dd9146db7d09beac9714602"
+      url "https://github.com/mickamy/seeder/releases/download/v0.0.4/seeder_0.0.4_linux_arm64.tar.gz"
+      sha256 "59f19ad8105ee15e39d731d6866d5d79a845cbe86fecfa2ca333ff3c61aa7c54"
       define_method(:install) do
         bin.install "seeder"
       end
