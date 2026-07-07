@@ -5,12 +5,12 @@
 class SqlTap < Formula
   desc "Watch SQL traffic in real-time with a TUI"
   homepage "https://github.com/mickamy/sql-tap"
-  version "0.3.1"
+  version "0.3.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/mickamy/sql-tap/releases/download/v0.3.1/sql-tap_0.3.1_darwin_amd64.tar.gz"
-      sha256 "83f65d12e21663a625ecb2219ae28098c8ca51cea4c6d28866a46c443d5ddd1a"
+      url "https://github.com/mickamy/sql-tap/releases/download/v0.3.2/sql-tap_0.3.2_darwin_amd64.tar.gz"
+      sha256 "6b38dbf5234e3b3ea53245554a3ff4aba85c0d25f821a02010bd7b41aca4df6e"
 
       define_method(:install) do
         bin.install "sql-tap"
@@ -18,8 +18,8 @@ class SqlTap < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/mickamy/sql-tap/releases/download/v0.3.1/sql-tap_0.3.1_darwin_arm64.tar.gz"
-      sha256 "fac320d318091ef6b17faed3d19bf69cddd60d5964030df407c99ddaf36b616d"
+      url "https://github.com/mickamy/sql-tap/releases/download/v0.3.2/sql-tap_0.3.2_darwin_arm64.tar.gz"
+      sha256 "d98ecb900e559d1e71a243e12c9d35b538b47a9f0bfa62db8c96a98a617dcc62"
 
       define_method(:install) do
         bin.install "sql-tap"
@@ -30,16 +30,16 @@ class SqlTap < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mickamy/sql-tap/releases/download/v0.3.1/sql-tap_0.3.1_linux_amd64.tar.gz"
-      sha256 "ae6d7e70701bffe761bf8e6420253272dacae1ef4f3e36264f56eea7b3febb60"
+      url "https://github.com/mickamy/sql-tap/releases/download/v0.3.2/sql-tap_0.3.2_linux_amd64.tar.gz"
+      sha256 "e451a4b39cf4182e7e8b85a8553b50969273a99486c41d4d61f00d3a348bebde"
       define_method(:install) do
         bin.install "sql-tap"
         bin.install "sql-tapd"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mickamy/sql-tap/releases/download/v0.3.1/sql-tap_0.3.1_linux_arm64.tar.gz"
-      sha256 "6faf62c0671695a3e9f66a5ac3368e3cd5e9eac80c1cc5befd8353abf6ce204a"
+      url "https://github.com/mickamy/sql-tap/releases/download/v0.3.2/sql-tap_0.3.2_linux_arm64.tar.gz"
+      sha256 "12f62acba7c0b230736ee97c1a18cc6778f2c3df904daac8983fe1459705186b"
       define_method(:install) do
         bin.install "sql-tap"
         bin.install "sql-tapd"
